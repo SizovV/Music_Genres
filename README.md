@@ -22,10 +22,9 @@
 
 ---
 ## Первая часть проекта
+[Тетрадка](part_1.ipynb)  
 **Признаки:**
 [Темп-MFCC-HP-Tonnetz + метки классов](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
-
-# Проект по МИИАД, часть 1
 
 | Модель | F1 | Параметры | Время обучения|ЭВМ |
 |:----|:----:|:----:|:----:|:----------:|
@@ -40,7 +39,9 @@
 **Эмбединги:**
 [VGG Embeddings + метки классов](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)  
 **Разбиение на train, valid, test выборки:**
-[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
+[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)  
+[Полносвязные архитектуры](part_2FCNN.ipynb)  
+[Рекуррентные архитектуры](part_2RNN.ipynb)  
 
 
 
