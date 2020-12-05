@@ -20,6 +20,9 @@
 **Датасет:**
 [FMA. A Dataset For Music Analysis](https://github.com/mdeff/fma)
 
+**Эмбединги для второй части проекта**
+[VGG Embeddings]https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing
+
 ---
 
 # Проект по МИИАД, часть 1
