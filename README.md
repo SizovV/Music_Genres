@@ -20,18 +20,10 @@
 **Датасет:**
 [FMA. A Dataset For Music Analysis](https://github.com/mdeff/fma)
 
+---
 ## Первая часть проекта
 **Признаки:**
 [Темп-MFCC-HP-Tonnetz + метки классов](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
-## Вторая часть проекта
-**Эмбединги:**
-[VGG Embeddings + метки классов](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)  
-**Разбиение на train, valid, test выборки:**
-[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
-
-
-
----
 
 # Проект по МИИАД, часть 1
 
@@ -42,3 +34,13 @@
 | Gradient Boosting Classifier | 57.13 | learning_rate=0.05 max_depth=5 n_estimators=200 subsample=0.5 | 3 минуты 32 секунды |AMD Razen 5 3500U 2100 MHz |
 | Logistic Regression          | 53.59 | C=0.01, solver='lbfgs', multi_class='multinomial' | 516 милисекунд     |AMD Razen 5 3500U 2100 MHz 8CPU|
 | CatBoost                     |       |                                                   |                    |                               |
+
+---
+## Вторая часть проекта
+**Эмбединги:**
+[VGG Embeddings + метки классов](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)  
+**Разбиение на train, valid, test выборки:**
+[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
+
+
+
