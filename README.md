@@ -20,8 +20,11 @@
 **Датасет:**
 [FMA. A Dataset For Music Analysis](https://github.com/mdeff/fma)
 
-**Эмбединги для второй части проекта**
-[VGG Embeddings](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)
+**Эмбединги для второй части проекта:**
+[VGG Embeddings + метки классов](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)
+
+**Признаки для первой части проекта:**
+[Темп-MFCC-HP-Tonnetz + метки классов](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
 
 ---
 
