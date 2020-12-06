@@ -24,7 +24,7 @@
 ## Первая часть проекта
 [Тетрадка](part_1.ipynb)  
 **Признаки:**
-[Темп-MFCC-HP-Tonnetz + метки классов](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
+[Темп-MFCC-HP-Tonnetz + метки классов](https://drive.google.com/file/d/1_l37zHMwYQLEliCqQ3TGPT0zdXxKnS07/view?usp=sharing)
 
 | Модель | F1 | Параметры | Время обучения|ЭВМ |
 |:----|:----:|:----:|:----:|:----------:|
