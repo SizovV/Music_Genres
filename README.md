@@ -32,7 +32,7 @@
 | Random Forest Classifier     | 56.23 | n_estimators=500 class_weight=’balanced’ | 28 секунд     |Intel Core i9 2400 GHz |
 | Gradient Boosting Classifier | 57.13 | learning_rate=0.05 max_depth=5 n_estimators=200 subsample=0.5 | 3 минуты 32 секунды |AMD Razen 5 3500U 2100 MHz |
 | Logistic Regression          | 53.59 | C=0.01, solver='lbfgs', multi_class='multinomial' | 516 милисекунд     |AMD Razen 5 3500U 2100 MHz 8CPU|
-| CatBoost                     |       |                                                   |                    |                               |
+| CatBoost                     | 59.34 | iterations=800, depth=6, bagging_temperature=0.5, l2_leaf_reg=0| 3 минуты 28 секунд |AMD Razen 5 3500U 2100 MHz 8CPU|
 
 ---
 ## Вторая часть проекта
