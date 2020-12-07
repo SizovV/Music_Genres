@@ -36,10 +36,13 @@
 
 ---
 ## Вторая часть проекта
-**Эмбединги:**
+### Эмбединги
+Вычисление эмбеддингов проводилось с помощью обученной на датасете Audoiset нейронной сети архитектуры [VGG](https://github.com/tensorflow/models/tree/master/research/audioset/vggish).  
+[Тетрадка](compute_embeddings.ipynb)  
 [VGG Embeddings + метки классов](https://drive.google.com/file/d/184k-41ytAEg2ibZKqJHh3IcgWEw-FkjP/view?usp=sharing)  
+### Обучение
 **Разбиение на train, valid, test выборки:**
-[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)  
+[id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)
 [Полносвязные архитектуры](part_2FCNN.ipynb)  
 [Рекуррентные архитектуры](part_2RNN.ipynb)  
 
