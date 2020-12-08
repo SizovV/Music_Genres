@@ -84,6 +84,7 @@
     \end{columns}
 \end{frame}
 
+
 \begin{frame}{Инструменты}
     \begin{columns}
         \column{0.5\linewidth}
@@ -95,6 +96,7 @@
         \includegraphics[height=7cm]{features.png}
     \end{columns}
 \end{frame}
+
 
 \section{Признаки}
 \begin{frame}{Признаки}
@@ -111,6 +113,7 @@
 \centering
 Спектр спектра, но по мел-шкале.\\
 
+
 \begin{columns}
     \column{0.5\linewidth}
     Мел-шкала
@@ -124,6 +127,7 @@
 В датасете посчитаны 20 коэффициентов по бинам, на которые разбита песня.\\
 И для каждой псоледовательности коэффициента расчитаны статистики:  mean, standard deviation, skew, kurtosis, median, minimum and maximum
 \end{frame}
+
 
 \begin{frame}{Tonnetz}
 Данный признак позволяет оценить наличие гармонии в сигнале, выделить характерные интервалы путём преобразования пространства классов высоты звука.\\
@@ -152,6 +156,7 @@
 \vfill
 Вычислены мощности гармонической и перкуссионной составляющих треков.  
 \end{frame}
+
 
 \section{Результаты. Часть 1}
             \begin{frame}{Результаты. Часть 1}
@@ -196,17 +201,47 @@
             
             
             \end{frame}
-            
-  \subsection{CNN}          
+              \subsection{CNN}          
             \begin{frame}{Результаты. Часть 2. CNN}
-                \begin{figure}[htbp]
-                    \centering
+                \begin{figure}[h]
                 	\includegraphics[width=1\linewidth]{CNN.png}
+                	Построенная архитектура состоит из двух сверхточных слоёв и одного линейного преобразования
                 \end{figure}
+            
+            \begin{columns}
+            
+             \begin{column}{0.5\textwidth}  %%<--- here
+                
+                
+                    \begin{center}
+                     \includegraphics[width=1\textwidth]{CNN_testandval.png}
+                    \tiny Слева--accuracy; справа--loss (красный--валлидация, синий--трейн)
+                     \end{center}
+                \end{column}
+                \begin{column}{0.5\textwidth}
+                   
+                   
+                   Количество батчей: 25\\
+                   
+                   
+                   Результат на трейне:\\
+                   Loss: 1.2092\\
+                   Accuracy: 59.3333\\
+                   
+                   Результат на тесте:\\
+                   loss: 1.299\\
+                   accuracy: 0.55\\
+                   
+                \end{column}
+               
+                \end{columns}
+
             
             \end{frame}
 % дополнительные слайды
 % сделать оглавление слайдов
+
+
 
 \beamertemplatenavigationsymbolsempty
 \begin{frame}[noframenumbering]{Основные слайды}
