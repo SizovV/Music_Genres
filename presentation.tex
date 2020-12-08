@@ -56,7 +56,7 @@
 
 
 
-\title{Проект по МИИАД, часть 1}
+\title{Проект по МИИАД}
 \subtitle{Классификация музыкальных произведений по жанрам}
 \author{Дживеликян Е.А. \\
         Латышев А.К. \\
@@ -153,8 +153,8 @@
 Вычислены мощности гармонической и перкуссионной составляющих треков.  
 \end{frame}
 
-\section{Результаты}
-            \begin{frame}{Результаты}
+\section{Результаты. Часть 1}
+            \begin{frame}{Результаты. Часть 1}
                       \begin{table}[]
                       \centering
 \resizebox{\textwidth}{!}{
@@ -170,12 +170,41 @@
             \end{table}
 \end{frame}
 
+
+
+
+\section{Результаты. Часть 2}
+
+
 \begin{frame}{VGG эмбеддинги}
 	Для выделения признаков высокого уровня использовалась предобученная на Audioset VGG net.
 	\includegraphics[width=\linewidth]{vgg_embed.png}
 	VGG обучалась определять множество разных меток на односекундных отрывках на датасете Audioset, полученном из роликов youtube.
 \end{frame}
 
+
+
+
+\subsection{RNN}
+            \begin{frame}{Результаты. Часть 2. RNN}
+            
+            
+            \end{frame}
+            
+ \subsection{FCNN}          
+            \begin{frame}{Результаты. Часть 2. FCNN}
+            
+            
+            \end{frame}
+            
+  \subsection{CNN}          
+            \begin{frame}{Результаты. Часть 2. CNN}
+                \begin{figure}[htbp]
+                    \centering
+                	\includegraphics[width=1\linewidth]{CNN.png}
+                \end{figure}
+            
+            \end{frame}
 % дополнительные слайды
 % сделать оглавление слайдов
 
