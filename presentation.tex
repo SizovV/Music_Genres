@@ -224,31 +224,49 @@
 \end{frame}
 
 
+\begin{frame}{LogReg}
+	В качестве baseline использовалась логистическая регрессия, на вход которой подавались эмбеддинги.
+
+	\vspace{0.5cm}
+	В результате поиска параметра C в диапазоне от \(10^{-5}\) до 1. Была найдена лучшая модель: solver='newton-cg', C=0.001.
+	\vspace{0.5cm}
+
+	Accuracy: 53.12
+
+	F1 = 52.63
+
+	Time: 2 минуты 15 секунд
+
+	AMD Razen 5 3500U 2100 MHz
+
+\end{frame}
 
 
 \subsection{RNN}
-            \begin{frame}{LSTM}
-            \includegraphics[width=\linewidth]{rnn_arch.png}
-            \end{frame}
-            \begin{frame}{Пространство поиска}
-            	Сэмплировано случайным образом 200 конфигураций c помощью Ray Tune
-\begin{table}[]
-	\begin{tabular}{ll}
-		размер скрытого слоя & \begin{tabular}[c]{@{}l@{}}от $2^3$ до $2^9$\\ с шагом степени 1\end{tabular} \\ \hline
-		число слоёв          & \{1, 2, 3, 4, 5\}                                                                \\ \hline
-		скорость обучения    & $(10^{-4};10^{-1})$                                                             \\ \hline
-		размер батча         & \{16, 32, 64, 128, 256\}                                                         \\ \hline
-		дропаут между LSTM   & $(0; 25*10^{-2})$                                                                \\ \hline
-		дропаут на выходе    & $(0; 25*10^{-2})$                                                                \\
-	\end{tabular}
-\end{table}
-Использовался ранний останов по validation accuracy и по алгоитму ASHA. 
-            \end{frame}
-        \begin{frame}
-        	Обучение модели с лучшими параметрами
-        	\begin{columns}
-        	\column{0.6\linewidth}
-        	\includegraphics[width=\linewidth]{rnn_train.png}
+
+    \begin{frame}{LSTM}
+        \includegraphics[width=\linewidth]{rnn_arch.png}
+    \end{frame}
+
+    \begin{frame}{Пространство поиска}
+        Сэмплировано случайным образом 200 конфигураций c помощью Ray Tune
+        \begin{table}[]
+        	\begin{tabular}{ll}
+        		размер скрытого слоя & \begin{tabular}[c]{@{}l@{}}от $2^3$ до $2^9$\\ с шагом степени 1\end{tabular} \\ \hline
+        		число слоёв          & \{1, 2, 3, 4, 5\}                                                                \\ \hline
+        		скорость обучения    & $(10^{-4};10^{-1})$                                                             \\ \hline
+        		размер батча         & \{16, 32, 64, 128, 256\}                                                         \\ \hline
+        		дропаут между LSTM   & $(0; 25*10^{-2})$                                                                \\ \hline
+        		дропаут на выходе    & $(0; 25*10^{-2})$                                                                \\
+        	\end{tabular}
+        \end{table}
+        Использовался ранний останов по validation accuracy и по алгоритму ASHA.
+    \end{frame}
+
+    \begin{frame}{Обучение модели с лучшими параметрами}
+        \begin{columns}
+            \column{0.6\linewidth}
+            \includegraphics[width=\linewidth]{rnn_train.png}
         	\column{0.4\linewidth}
         	\begin{table}[]
         		\resizebox{\textwidth}{!}{
@@ -264,53 +282,50 @@
         	}
         	\end{table}
         \end{columns}
-    Оптимизатор: Adam\\
-    Функция потерь: Cross Entropy на softmax 
+        Оптимизатор: Adam\\
+        Функция потерь: Cross Entropy на softmax
         \end{frame}
-        
-            
- \subsection{FCNN}          
-            \begin{frame}{FCNN}
-            
-            
-            \end{frame}
-              \subsection{CNN}          
-            \begin{frame}{Результаты. Часть 2. CNN}
-                \begin{figure}[h]
-                	\includegraphics[width=1\linewidth]{CNN.png}
-                	Построенная архитектура состоит из двух сверхточных слоёв и одного линейного преобразования
-                \end{figure}
-            
-            \begin{columns}
-            
-             \begin{column}{0.5\textwidth}  %%<--- here
-                
-                
-                    \begin{center}
-                     \includegraphics[width=1\textwidth]{CNN_testandval.png}
-                    \tiny Слева--accuracy; справа--loss (красный--валлидация, синий--трейн)
-                     \end{center}
-                \end{column}
-                \begin{column}{0.5\textwidth}
-                   
-                   
-                   Количество батчей: 25\\
-                   
-                   
-                   Результат на трейне:\\
-                   Loss: 1.2092\\
-                   Accuracy: 59.3333\\
-                   
-                   Результат на тесте:\\
-                   loss: 1.299\\
-                   accuracy: 0.55\\
-                   
-                \end{column}
-               
-                \end{columns}
 
-            
-            \end{frame}
+
+ \subsection{FCNN}
+
+    \begin{frame}{Fully Connected NN}
+
+
+    \end{frame}
+
+
+\subsection{CNN}
+
+    \begin{frame}{Convolutional NN}
+        \begin{figure}[h]
+            \includegraphics[width=1\linewidth]{CNN.png}
+            Построенная архитектура состоит из двух сверхточных слоёв и одного линейного преобразования
+        \end{figure}
+
+        \begin{columns}
+            \begin{column}{0.5\textwidth}  %%<--- here
+                \begin{center}
+                    \includegraphics[width=1\textwidth]{CNN_testandval.png}
+                    \tiny Слева--accuracy; справа--loss (красный--валлидация, синий--трейн)
+                \end{center}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                Количество батчей: 25\\
+
+                Результат на трейне:\\
+                Loss: 1.2092\\
+                Accuracy: 59.3333\\
+
+                Результат на тесте:\\
+                Loss: 1.299\\
+                Accuracy: 0.55\\
+            \end{column}
+
+        \end{columns}
+
+
+    \end{frame}
 % дополнительные слайды
 % сделать оглавление слайдов
 
