@@ -53,9 +53,9 @@
 | Модель | F1 | AUC | Параметры | Время обучения|ЭВМ |
 |:----|:----:|:----:|:----:|:----:|:----------:|
 | LofReg (BaseLine)  | 52.63 | 53.12 | solver=’newton-cg’, C=0.001          | 2 минуты 15 секунд  |AMD Razen 5 3500U 2100 MHz  |
-| LSTM               | 54.01 | 55.01 | Cross Entropy на softmax             |     |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory |
+| LSTM               | 54.01 | 55.01 | lr=0.006, CrossEntropy на softmax, 25 эрох             |     |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory |
 | Fully Connected NN | 48.32 | 83.88 | lr=0.005, CrossEntropyLoss, 360 эрох |  |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory |
-| CNN                | 49.01 | 55.01 | lr=0.001, CrossEntropyLoss, 360 эрох |     |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory|
+| CNN                | 49.01 | 55.01 | lr=0.001, CrossEntropyLoss, 25 эрох |     |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory|
 
 
 
