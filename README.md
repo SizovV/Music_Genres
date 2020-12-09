@@ -15,7 +15,9 @@
 **Авторы:**   
 - Дживеликян Е.А.
 - Латышев А.К. 
-- Сизов В.С.      
+- Сизов В.С.
+
+**Результаты:**
 [Презентация](presentation.pdf)  
 **Датасет:**
 [FMA. A Dataset For Music Analysis](https://github.com/mdeff/fma)
