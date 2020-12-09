@@ -53,9 +53,9 @@
 | Модель | F1 |  ЭВМ |
 |:----|:----:|:----------:|
 | LofReg (BaseLine)  | 52.63 | AMD Razen 5 3500U 2100 MHz  |
-| LSTM               | 54.01 |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory |
-| Fully Connected NN | 48.32 |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory |
-| CNN                | 49.01 |Intel(R) Xeon(R) 2CPU @ 2.30GHz Google Colaboratory|
+| LSTM               | 54.01 |NVIDIA Tesla T4 Google Colaboratory |
+| Fully Connected NN | 48.32 |NVIDIA Tesla T4 Google Colaboratory |
+| CNN                | 49.01 |NVIDIA Tesla T4 Google Colaboratory|
 
 
 
