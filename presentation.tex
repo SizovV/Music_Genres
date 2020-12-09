@@ -290,7 +290,43 @@
  \subsection{FCNN}
 
     \begin{frame}{Fully Connected NN}
+        \begin{figure}[h]
+            \includegraphics[scale=0.4]{FCNN.png}
+        \end{figure}
 
+    \end{frame}
+
+    \subsection{CNN}
+
+    \begin{frame}{Результаты  FCNN}
+        Для трех предложенных моделей использовался оптимизатор SGD (lr=0.005). И лосс функции NLLLoss и CrossEntropyLoss (значимой разницы они не показали).
+        \vspace{0.5cm}
+
+        В моделях 2, 2-1 и 3 подбирались размеры скрытых слоев в диапазоне от 3000 до 50.
+        \vspace{0.5cm}
+
+        Значимых различий для этих моделей и модели 1 не наблюдалось, но в среднем модель 2-1 показала лучший результат (вероятность dropout 0.5).
+
+    \end{frame}
+
+    \begin{frame}{Лучшая  FCNN}
+
+        \begin{columns}
+            \begin{column}{0.7\textwidth}
+                \begin{center}
+                    \includegraphics[width=1\textwidth]{FCNNres.PNG}
+                    \tiny красный--валлидация, синий--трейн
+                \end{center}
+            \end{column}
+            \begin{column}{0.4\textwidth}
+                Для модели 2-1 был проведен более подробный анализ размера внутреннего слоя. Значения были в диапазоне от 100 до 20 с шагом 10. Было прогнано 3 модели для каждого параметра. В результате лучшим оказалось 30 скрытых нейронов.
+                Количество батчей: 100\\
+                \(F1: 0.4832 \pm 0.0024\)\\
+                \(AUC: 0.8388 \pm 0.0059\)\\
+                \(Epoch: 360 \pm 17\)\\
+            \end{column}
+
+        \end{columns}
 
     \end{frame}
 
