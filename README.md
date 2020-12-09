@@ -52,9 +52,9 @@
 
 | Модель | F1 |Время обучения|  ЭВМ |
 |:----|:----:|:----:|:----------:|
-| LofReg (BaseLine)  | 52.63 |2min 15s| AMD Razen 5 3500U 2100 MHz  |
+| LogReg (BaseLine)  | 52.63 |2min 15s| AMD Razen 5 3500U 2100 MHz  |
 | LSTM               | 54.01 |18s|NVIDIA Tesla T4 Google Colaboratory |
-| Fully Connected NN | 48.32 ||NVIDIA Tesla T4 Google Colaboratory |
+| Fully Connected NN | 48.32 |3min 59s|NVIDIA Tesla T4 Google Colaboratory |
 | CNN                | 53.28 |1min 55s|NVIDIA Tesla T4 Google Colaboratory|
 
 

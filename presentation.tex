@@ -70,6 +70,78 @@
 	\beamertemplatenavigationsymbolsempty
 	\frame[plain, noframenumbering]{\titlepage}
 }
+\documentclass[c, aspectratio = 43]{beamer}
+ \usetheme{Pittsburgh}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в фомулах
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[english, russian]{babel}	% локализация и переносы
+%\usepackage{pscyr} % Нормальные шрифты
+
+%%% Дополнительная работа с математикой
+\usepackage{amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{amsmath}
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+%\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+\usepackage{gensymb}
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{images/}{pictures/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+\beamertemplatenavigationsymbolsempty
+\setbeamerfont{footline}{size=\large}
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[black]{footline}%
+	%\hspace{1em}%
+	\insertframenumber \hspace{0.5cm}
+	\hyperlink{toc}{\beamerbutton{оглавление}}
+}
+\sloppy
+
+\setbeamertemplate{frametitle}{\bfseries \vspace{6pt} \insertframetitle \vspace{6pt}}
+
+
+
+
+\title{Проект по МИИАД}
+\subtitle{Классификация музыкальных произведений по жанрам}
+\author{Дживеликян Е.А. \\
+        Латышев А.К. \\
+        Сизов В.С.}
+\date{4 ноября 2020 г.}
+\institute[НИУ ``МФТИ'']{ Национальный исследовательский университет\\``Московский физико-технический институт''}
+
+\begin{document}
+
+{
+	\beamertemplatenavigationsymbolsempty
+	\frame[plain, noframenumbering]{\titlepage}
+}
 \part{Основные слайды}
 \section{Датасет и инструменты}
 \begin{frame}{Датасет}
@@ -121,7 +193,7 @@
     \column{0.5\linewidth}
     Пример MFC
     \includegraphics[width=\linewidth]{mfcc2.png}
-    
+
 \end{columns}
 
 В датасете посчитаны 20 коэффициентов по бинам, на которые разбита песня.\\
@@ -379,11 +451,11 @@
  &&&3500U \\
  &&&2100 MHz\\
 \hline
-LSTM & 54.01 & &NVIDIA \\&&&
+LSTM & 54.01 & 18s &NVIDIA \\&&&
 Tesla T4 \\
 &&&Google Colaboratory\\
 \hline
- Fully Connected NN & 48.32 & &NVIDIA  \\
+ Fully Connected NN & 48.32 & 3min 59s &NVIDIA  \\
  &&&Tesla T4 \\
 &&&Google Colaboratory\\
 \hline
@@ -407,9 +479,9 @@ Convolutional NN & 49.01 & 1min 55s &NVIDIA  \\
 	\begin{block}{Латышев А.К.}
 		Обучение полносвязных глубоких сетей и логистической регрессии.
 	\end{block}
-	
+
 	\begin{block}{Сизов В.С.}
-		Обучение свёрточных архитектур. 
+		Обучение свёрточных архитектур.
 	\end{block}
 
 	\vfill
@@ -427,4 +499,5 @@ Convolutional NN & 49.01 & 1min 55s &NVIDIA  \\
 	\tableofcontents[part=1]
 \end{frame}
 
+\end{document}
 \end{document}
