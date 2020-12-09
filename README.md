@@ -15,8 +15,8 @@
 **Авторы:**   
 - Дживеликян Е.А.
 - Латышев А.К. 
-- Сизов В.С.    
-
+- Сизов В.С.      
+[Презентация](presentation.pdf)  
 **Датасет:**
 [FMA. A Dataset For Music Analysis](https://github.com/mdeff/fma)
 
@@ -45,6 +45,7 @@
 [id треков](https://drive.google.com/file/d/1PpP3HXTFQSctKoG3SkhrprtUH1TrG-4q/view?usp=sharing)  
 [Полносвязные архитектуры](part_2FCNN.ipynb)  
 [Рекуррентные архитектуры](part_2RNN.ipynb)  
+[Свёрточные архитектуры](part_2CNN.ipynb)
 
 
 
