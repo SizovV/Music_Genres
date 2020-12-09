@@ -50,12 +50,12 @@
 [Свёрточные архитектуры](part_2CNN.ipynb)
 
 
-| Модель | F1 |  ЭВМ |
-|:----|:----:|:----------:|
-| LofReg (BaseLine)  | 52.63 | AMD Razen 5 3500U 2100 MHz  |
-| LSTM               | 54.01 |NVIDIA Tesla T4 Google Colaboratory |
-| Fully Connected NN | 48.32 |NVIDIA Tesla T4 Google Colaboratory |
-| CNN                | 49.01 |NVIDIA Tesla T4 Google Colaboratory|
+| Модель | F1 |Время обучения|  ЭВМ |
+|:----|:----:|:----:|:----------:|
+| LofReg (BaseLine)  | 52.63 |2min 15s| AMD Razen 5 3500U 2100 MHz  |
+| LSTM               | 54.01 ||NVIDIA Tesla T4 Google Colaboratory |
+| Fully Connected NN | 48.32 ||NVIDIA Tesla T4 Google Colaboratory |
+| CNN                | 49.01 |1min 32s|NVIDIA Tesla T4 Google Colaboratory|
 
 
 
