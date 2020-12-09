@@ -339,7 +339,7 @@
     \begin{frame}{Convolutional NN}
         \begin{figure}[h]
             \includegraphics[width=1\linewidth]{CNN.png}
-            Построенная архитектура состоит из двух сверхточных слоёв и одного линейного преобразования
+            Построенная лучшая архитектура состоит из двух сверхточных слоёв и одного линейного преобразования
         \end{figure}
 
         \begin{columns}
@@ -351,14 +351,16 @@
             \end{column}
             \begin{column}{0.5\textwidth}
                 Количество батчей: 25\\
+                Лосс функция: CrossEntropyLoss\\
 
                 Результат на трейне:\\
                 Loss: 1.2092\\
-                Accuracy: 59.3333\\
+                Accuracy: 0.59\\
 
                 Результат на тесте:\\
                 Loss: 1.299\\
-                Accuracy: 0.55\\
+                AUC: 0.55\\
+                F1(macro): 0.49\\
             \end{column}
 
         \end{columns}
