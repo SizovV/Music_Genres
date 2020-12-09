@@ -370,21 +370,26 @@
   \begin{frame}{Результаты. Часть 2}
 
 
-\begin{table}[]
+\begin{table}[]\footnotesize
 \begin{tabular}{lclclcl}
 \hline
- Модель & F1 & ЭВМ \\
+ Модель & F1 &Время обучения& ЭВМ \\
  \hline
- LofReg (BaseLine) & 52.63 & AMD Razen 5 3500U 2100 MHz\\
+ LofReg (BaseLine) & 52.63 & 2min 15s &AMD Razen 5 \\
+ &&&3500U \\
+ &&&2100 MHz\\
 \hline
-LSTM & 54.01 & NVIDIA Tesla T4 \\
-&&Google Colaboratory\\
+LSTM & 54.01 & &NVIDIA \\&&&
+Tesla T4 \\
+&&&Google Colaboratory\\
 \hline
- Fully Connected NN & 48.32 & NVIDIA Tesla T4  \\
-&&Google Colaboratory\\
+ Fully Connected NN & 48.32 & &NVIDIA  \\
+ &&&Tesla T4 \\
+&&&Google Colaboratory\\
 \hline
-Convolutional NN & 49.01 & NVIDIA Tesla T4  \\
-&&Google Colaboratory\\
+Convolutional NN & 49.01 & 1min 55s &NVIDIA  \\
+&&&Tesla T4 \\
+&&&Google Colaboratory\\
 \hline
 \end{tabular}
 \end{table}
